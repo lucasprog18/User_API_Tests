@@ -1,0 +1,18 @@
+# Ambiente virtual
+venv/
+.env
+
+# Relatórios gerados
+/reports/
+
+# Cache e metadados do Python/pytest
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+
+# IDEs e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
