@@ -3,6 +3,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from src.services.user_service import update_user
 from data.user_payloads import generate_update_payload
+from schemas.user_schemas import UpdatedUserResponse
 
 def test_update_user_returns_200_and_updatedAt():
     """
@@ -15,5 +16,6 @@ def test_update_user_returns_200_and_updatedAt():
     response = update_user(user_id, payload)
 
     assert response.status_code == 200
+    UpdatedUserResponse(**response.json())  # valida o contrato da resposta
     body = response.json()
     assert "updatedAt" in body

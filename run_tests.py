@@ -23,6 +23,23 @@ def main():
     # Executa os testes com os argumentos definidos
     pytest.main(pytest_args)
 
+# ---------------------------------------------
+# 🧪 Optional: code coverage using pytest-cov
+#
+# To measure code coverage, install the package:
+#   pip install pytest-cov
+#
+# Then run:
+#   pytest --cov=src tests/
+#
+# To generate an HTML report:
+#   pytest --cov=src --cov-report=html tests/
+#   → Opens in /htmlcov/index.html
+#
+# This helps visualize which lines/files are covered by tests.
+# ---------------------------------------------
+
+
 if __name__ == "__main__":
     main()
 

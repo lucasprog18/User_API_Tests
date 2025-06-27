@@ -3,4 +3,7 @@ pytest
 pytest-html
 faker
 python-dotenv
+pydantic
+pytest-cov
+
 
